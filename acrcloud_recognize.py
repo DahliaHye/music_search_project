@@ -9,6 +9,12 @@ ACRCloud로 audio 폴더의 mp3에서 곡 제목·가수 조회 → results.csv 
   환경 변수 ACRCLOUD_HOST, ACRCLOUD_ACCESS_KEY, ACRCLOUD_ACCESS_SECRET
 
 대상: audio/*.mp3 (main.py 로 추출한 파일 등)
+
+파일명 규칙(참고): 가수_곡_audio.mp3
+  예: BTS_SWIM_audio.mp3 → 가수 BTS, 곡 SWIM
+  첫 번째 _ 만 구분선으로 쓰고, 곡 제목 안에 _ 가 있어도 됩니다.
+
+results.csv: 열 2개 — 파일명, 인식 결과(괄호 안에 파일명 해석·비고 등).
 """
 from __future__ import annotations
 
@@ -178,6 +184,44 @@ def list_audio_mp3s(folder: Path) -> list[Path]:
     return sorted(p for p in folder.iterdir() if p.is_file() and p.suffix.lower() == ".mp3")
 
 
+def stem_without_audio_suffix(filename: str) -> str:
+    """1_audio.mp3 / 가수_곡_audio.mp3 → stem 에서 _audio 제거."""
+    stem = Path(filename).stem
+    if stem.endswith("_audio"):
+        return stem[: -len("_audio")]
+    return stem
+
+
+def parse_expected_artist_title(filename: str) -> tuple[str, str]:
+    """
+    가수_곡 형식: 첫 _ 기준 분리.
+    _ 없으면 곡만 있다고 보고 (가수 빈칸, 전체를 곡 후보로).
+    """
+    base = stem_without_audio_suffix(filename)
+    if "_" not in base:
+        return ("", base.strip())
+    artist, title = base.split("_", 1)
+    return (artist.strip(), title.strip())
+
+
+def format_csv_result_cell(
+    title: str,
+    artists: str,
+    exp_a: str,
+    exp_t: str,
+    note: str,
+) -> str:
+    """앞: 인식 제목·가수, 뒤: 괄호 안 부가 정보."""
+    if title or artists:
+        main = f"{title or '—'} | {artists or '—'}"
+    else:
+        main = "(인식 없음)"
+    extra = f"파일명 해석: 가수={exp_a or '—'} · 곡={exp_t or '—'}"
+    if note:
+        extra = f"{extra} · 비고: {note[:500]}"
+    return f"{main} ({extra})"
+
+
 def main() -> None:
     _configure_windows_console()
 
@@ -203,25 +247,33 @@ def main() -> None:
         sys.exit(1)
 
     ffmpeg = resolve_ffmpeg()
-    rows: list[list] = []
+    header = ["파일명", "인식 결과 (괄호: 파일명 해석·비고)"]
+    rows: list[list[str]] = []
     for audio_path in audio_files:
         clip, mime = audio_clip_bytes(ffmpeg, audio_path)
         raw = identify_by_audio(host, key, secret, clip, audio_path.name, mime)
         title, artists, note = parse_music_line(raw)
-        rows.append([audio_path.name, title, artists, note or raw[:400]])
+        exp_a, exp_t = parse_expected_artist_title(audio_path.name)
+        cell = format_csv_result_cell(title, artists, exp_a, exp_t, note)
+        rows.append([audio_path.name, cell])
         _safe_print(audio_path.name)
-        _safe_print("  제목:", title or "(없음)")
-        _safe_print("  아티스트:", artists or "(없음)")
+        _safe_print("  인식:", title or "(없음)", "|", artists or "(없음)")
+        _safe_print(
+            "  파일명 해석:",
+            exp_a or "(가수 없음)",
+            "/",
+            exp_t,
+        )
         if note:
             _safe_print("  비고:", note[:200])
         _safe_print("-" * 40)
 
     with OUTPUT_CSV.open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
-        w.writerow(["Audio File", "Title", "Artists", "Note_or_raw"])
+        w.writerow(header)
         w.writerows(rows)
 
-    _safe_print(f"[완료] {OUTPUT_CSV}")
+    _safe_print(f"[완료] {OUTPUT_CSV} ({len(rows)}건)")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,932 @@
+[
+  {
+    "filename": "Billie Eilish_BIRDS OF A FEATHER_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Billie Eilish_BIRDS OF A FEATHER_audio.mp3",
+    "guess_artist": "Billie Eilish",
+    "guess_title": "BIRDS OF A FEATHER",
+    "text_tags": "moderate tempo mid 중간 balanced neutral 중성 smooth harmonic 부드러운 mixed harmonic percussive 혼합 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.3027837886363529,
+        "tempo_norm": 0.361328125,
+        "harmonic_emphasis": 0.3340673654999203
+      },
+      "voice": {
+        "vocal_brightness": 0.2444306126243105,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.011175619824475893,
+        "vocal_prominence_vs_mix": 0.1793598833072955
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.21258985996246338,
+      "perc_rms": 0.161897212266922,
+      "vocal_rms": 0.1685100333685814
+    },
+    "cluster_id": 4
+  },
+  {
+    "filename": "Billie Eilish_idontwannabeyouanymore_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Billie Eilish_idontwannabeyouanymore_audio.mp3",
+    "guess_artist": "Billie Eilish",
+    "guess_title": "idontwannabeyouanymore",
+    "text_tags": "fast tempo upbeat 빠른 활기 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.27387276348084877,
+        "tempo_norm": 0.935546875,
+        "harmonic_emphasis": 0.5989408741458287
+      },
+      "voice": {
+        "vocal_brightness": 0.18853812489336486,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.006422962324082891,
+        "vocal_prominence_vs_mix": 0.18458689243070672
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.19293761253356934,
+      "perc_rms": 0.08602272719144821,
+      "vocal_rms": 0.13209250546853052
+    },
+    "cluster_id": 2
+  },
+  {
+    "filename": "Billie Eilish_wish you were gay_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Billie Eilish_wish you were gay_audio.mp3",
+    "guess_artist": "Billie Eilish",
+    "guess_title": "wish you were gay",
+    "text_tags": "moderate tempo mid 중간 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.306402880188151,
+        "tempo_norm": 0.47878196022727276,
+        "harmonic_emphasis": 0.7162004049975131
+      },
+      "voice": {
+        "vocal_brightness": 0.20745586818094872,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.007893441301921513,
+        "vocal_prominence_vs_mix": 0.15376842801540871
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.20067548751831055,
+      "perc_rms": 0.0729229673743248,
+      "vocal_rms": 0.10098373290780246
+    },
+    "cluster_id": 2
+  },
+  {
+    "filename": "BTS_SWIM Live_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\BTS_SWIM Live_audio.mp3",
+    "guess_artist": "BTS",
+    "guess_title": "SWIM Live",
+    "text_tags": "moderate tempo mid 중간 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.38540402140423685,
+        "tempo_norm": 0.525390625,
+        "harmonic_emphasis": 0.45276884237577425
+      },
+      "voice": {
+        "vocal_brightness": 0.3024146636532543,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.017635749313824924,
+        "vocal_prominence_vs_mix": 0.20074333954665943
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.1662462204694748,
+      "perc_rms": 0.09779864549636841,
+      "vocal_rms": 0.13637777280918523
+    },
+    "cluster_id": 4
+  },
+  {
+    "filename": "City Of Stars (Humming)_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\City Of Stars (Humming)_audio.mp3",
+    "guess_artist": "",
+    "guess_title": "City Of Stars (Humming)",
+    "text_tags": "slow tempo calm 느린 잔잔 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 harmonic melodic 선율 위주 medium loudness 중간 볼륨 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 0.6059643030166626,
+        "brightness": 0.15203152911358214,
+        "tempo_norm": 0.26904296875,
+        "harmonic_emphasis": 1.0
+      },
+      "voice": {
+        "vocal_brightness": 0.12821450490699676,
+        "vocal_presence": 0.8995044976472855,
+        "vocal_air_hf": 0.0018874072272514568,
+        "vocal_prominence_vs_mix": 0.29688365316447757
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.052412811666727066,
+      "perc_rms": 0.008592995814979076,
+      "vocal_rms": 0.04996693332304449
+    },
+    "cluster_id": 1
+  },
+  {
+    "filename": "colorlessFlower_Further_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\colorlessFlower_Further_audio.mp3",
+    "guess_artist": "colorlessFlower",
+    "guess_title": "Further",
+    "text_tags": "moderate tempo mid 중간 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 harmonic melodic 선율 위주 quiet soft 조용 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 0.2971196472644806,
+        "brightness": 0.20589128547880414,
+        "tempo_norm": 0.2975260416666667,
+        "harmonic_emphasis": 0.7522446317712705
+      },
+      "voice": {
+        "vocal_brightness": 0.15588668914238524,
+        "vocal_presence": 0.44849012047052383,
+        "vocal_air_hf": 0.0038642435601693005,
+        "vocal_prominence_vs_mix": 0.3018919189533003
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.0218234583735466,
+      "perc_rms": 0.007462594658136368,
+      "vocal_rms": 0.024802528026126362
+    },
+    "cluster_id": 1
+  },
+  {
+    "filename": "G-Dragon_Heartbreaker_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\G-Dragon_Heartbreaker_audio.mp3",
+    "guess_artist": "G-Dragon",
+    "guess_title": "Heartbreaker",
+    "text_tags": "fast tempo upbeat 빠른 활기 balanced neutral 중성 noisy percussive 타격감 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal balanced natural 중성 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.4213306562525946,
+        "tempo_norm": 0.633326480263158,
+        "harmonic_emphasis": 0.4159746637447029
+      },
+      "voice": {
+        "vocal_brightness": 0.36425012973513665,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.022140128099140573,
+        "vocal_prominence_vs_mix": 0.21887152351910977
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.1662379950284958,
+      "perc_rms": 0.10549521446228027,
+      "vocal_rms": 0.16198011742815985
+    },
+    "cluster_id": 5
+  },
+  {
+    "filename": "G-Dragon_Untitled, 무제(無題)_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\G-Dragon_Untitled, 무제(無題)_audio.mp3",
+    "guess_artist": "G-Dragon",
+    "guess_title": "Untitled, 무제(無題)",
+    "text_tags": "slow tempo calm 느린 잔잔 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.2542575477480827,
+        "tempo_norm": 0.15252130681818177,
+        "harmonic_emphasis": 0.8854260848707866
+      },
+      "voice": {
+        "vocal_brightness": 0.19289950750525775,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.004952852727462437,
+        "vocal_prominence_vs_mix": 0.261589302322654
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.1779131442308426,
+      "perc_rms": 0.04888907074928284,
+      "vocal_rms": 0.16244090482893156
+    },
+    "cluster_id": 2
+  },
+  {
+    "filename": "G-Dragon_나만 바라봐 2_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\G-Dragon_나만 바라봐 2_audio.mp3",
+    "guess_artist": "G-Dragon",
+    "guess_title": "나만 바라봐 2",
+    "text_tags": "slow tempo calm 느린 잔잔 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.4100321114069967,
+        "tempo_norm": 0.26904296875,
+        "harmonic_emphasis": 0.5659449615210709
+      },
+      "voice": {
+        "vocal_brightness": 0.3113962902766982,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.0160373961059698,
+        "vocal_prominence_vs_mix": 0.17710036419547015
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.23986731469631195,
+      "perc_rms": 0.11355362087488174,
+      "vocal_rms": 0.15352970799641738
+    },
+    "cluster_id": 4
+  },
+  {
+    "filename": "Jay Park(박재범)_ All I Wanna Do_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Jay Park(박재범)_ All I Wanna Do_audio.mp3",
+    "guess_artist": "Jay Park(박재범)",
+    "guess_title": "All I Wanna Do",
+    "text_tags": "moderate tempo mid 중간 balanced neutral 중성 smooth harmonic 부드러운 mixed harmonic percussive 혼합 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.37951100487650963,
+        "tempo_norm": 0.2975260416666667,
+        "harmonic_emphasis": 0.3172033865393651
+      },
+      "voice": {
+        "vocal_brightness": 0.3021999823087264,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.017036258430199215,
+        "vocal_prominence_vs_mix": 0.22657057312182438
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.1682816445827484,
+      "perc_rms": 0.13346120715141296,
+      "vocal_rms": 0.15886470659471985
+    },
+    "cluster_id": 2
+  },
+  {
+    "filename": "Jay Park(박재범)_West Coast_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Jay Park(박재범)_West Coast_audio.mp3",
+    "guess_artist": "Jay Park(박재범)",
+    "guess_title": "West Coast",
+    "text_tags": "moderate tempo mid 중간 balanced neutral 중성 noisy percussive 타격감 mixed harmonic percussive 혼합 loud energetic 강한 에너지 music audio track vocal balanced natural 중성 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.46031399448018495,
+        "tempo_norm": 0.2975260416666667,
+        "harmonic_emphasis": 0.21011020375374148
+      },
+      "voice": {
+        "vocal_brightness": 0.3568817735821858,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.021731067781875585,
+        "vocal_prominence_vs_mix": 0.1898291352879827
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.1783081740140915,
+      "perc_rms": 0.19026842713356018,
+      "vocal_rms": 0.16430180709516393
+    },
+    "cluster_id": 5
+  },
+  {
+    "filename": "keshi_2 soon_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\keshi_2 soon_audio.mp3",
+    "guess_artist": "keshi",
+    "guess_title": "2 soon",
+    "text_tags": "fast tempo upbeat 빠른 활기 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.35385587946726377,
+        "tempo_norm": 0.935546875,
+        "harmonic_emphasis": 0.3988743293532379
+      },
+      "voice": {
+        "vocal_brightness": 0.2793809836520146,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.01407359187290374,
+        "vocal_prominence_vs_mix": 0.19477426034668407
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.20757129788398743,
+      "perc_rms": 0.1366037130355835,
+      "vocal_rms": 0.15746531169287187
+    },
+    "cluster_id": 0
+  },
+  {
+    "filename": "keshi_always_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\keshi_always_audio.mp3",
+    "guess_artist": "keshi",
+    "guess_title": "always",
+    "text_tags": "fast tempo upbeat 빠른 활기 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.39836372923382163,
+        "tempo_norm": 1.0,
+        "harmonic_emphasis": 0.4668073065926275
+      },
+      "voice": {
+        "vocal_brightness": 0.28079789303847225,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.014201371658961221,
+        "vocal_prominence_vs_mix": 0.17362595191626248
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.2143167406320572,
+      "perc_rms": 0.12257860600948334,
+      "vocal_rms": 0.1499918507886743
+    },
+    "cluster_id": 0
+  },
+  {
+    "filename": "keshi_summer_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\keshi_summer_audio.mp3",
+    "guess_artist": "keshi",
+    "guess_title": "summer",
+    "text_tags": "fast tempo upbeat 빠른 활기 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.35330272134469615,
+        "tempo_norm": 0.935546875,
+        "harmonic_emphasis": 0.4389814713783071
+      },
+      "voice": {
+        "vocal_brightness": 0.2690821128222898,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.0102282091269997,
+        "vocal_prominence_vs_mix": 0.1678472430608234
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.19669634103775024,
+      "perc_rms": 0.11900243908166885,
+      "vocal_rms": 0.12422244715065707
+    },
+    "cluster_id": 0
+  },
+  {
+    "filename": "Midnight in Paris OST_15 - Ballad Du Paris_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Midnight in Paris OST_15 - Ballad Du Paris_audio.mp3",
+    "guess_artist": "Midnight in Paris OST",
+    "guess_title": "15 - Ballad Du Paris",
+    "text_tags": "fast tempo upbeat 빠른 활기 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.35108465180866066,
+        "tempo_norm": 0.57666015625,
+        "harmonic_emphasis": 0.5124958630039461
+      },
+      "voice": {
+        "vocal_brightness": 0.3136236198198567,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.015577459133867027,
+        "vocal_prominence_vs_mix": 0.29436292735541014
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.10789068043231964,
+      "perc_rms": 0.0564502477645874,
+      "vocal_rms": 0.12218849138814795
+    },
+    "cluster_id": 4
+  },
+  {
+    "filename": "N.Flying_Into Bloom_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\N.Flying_Into Bloom_audio.mp3",
+    "guess_artist": "N.Flying",
+    "guess_title": "Into Bloom",
+    "text_tags": "slow tempo calm 느린 잔잔 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 mixed harmonic percussive 혼합 quiet soft 조용 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 0.09118259511888027,
+        "brightness": 0.2277676798585573,
+        "tempo_norm": 0.115234375,
+        "harmonic_emphasis": 0.3396343320276847
+      },
+      "voice": {
+        "vocal_brightness": 0.1923302986144724,
+        "vocal_presence": 0.3575814887881279,
+        "vocal_air_hf": 0.006124325123714054,
+        "vocal_prominence_vs_mix": 0.7843195102371383
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.006193466950207949,
+      "perc_rms": 0.004654984455555677,
+      "vocal_rms": 0.02230961193248466
+    },
+    "cluster_id": 1
+  },
+  {
+    "filename": "Pole6_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Pole6_audio.mp3",
+    "guess_artist": "",
+    "guess_title": "Pole6",
+    "text_tags": "fast tempo upbeat 빠른 활기 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 harmonic melodic 선율 위주 quiet soft 조용 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 0.26636622101068497,
+        "brightness": 0.21786262050816194,
+        "tempo_norm": 0.57666015625,
+        "harmonic_emphasis": 0.8891836051390044
+      },
+      "voice": {
+        "vocal_brightness": 0.17025466036696185,
+        "vocal_presence": 0.4942159727215767,
+        "vocal_air_hf": 0.0038196249404702834,
+        "vocal_prominence_vs_mix": 0.37108004804929745
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.021159669384360313,
+      "perc_rms": 0.0057792929001152515,
+      "vocal_rms": 0.027713288316547832
+    },
+    "cluster_id": 1
+  },
+  {
+    "filename": "Rose_drinks or coffee_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Rose_drinks or coffee_audio.mp3",
+    "guess_artist": "Rose",
+    "guess_title": "drinks or coffee",
+    "text_tags": "fast tempo upbeat 빠른 활기 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.3431128645705662,
+        "tempo_norm": 0.633326480263158,
+        "harmonic_emphasis": 0.6378782516928444
+      },
+      "voice": {
+        "vocal_brightness": 0.2625237298803927,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.009747542366178641,
+        "vocal_prominence_vs_mix": 0.21720205756173475
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.26690784096717834,
+      "perc_rms": 0.11104132235050201,
+      "vocal_rms": 0.20803476115446784
+    },
+    "cluster_id": 2
+  },
+  {
+    "filename": "Rose_number one girl_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Rose_number one girl_audio.mp3",
+    "guess_artist": "Rose",
+    "guess_title": "number one girl",
+    "text_tags": "fast tempo upbeat 빠른 활기 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.3451831744890435,
+        "tempo_norm": 0.8458251953125,
+        "harmonic_emphasis": 0.7430747638059035
+      },
+      "voice": {
+        "vocal_brightness": 0.22749831429510728,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.008862307102048213,
+        "vocal_prominence_vs_mix": 0.30847692316108827
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.13112574815750122,
+      "perc_rms": 0.04553455486893654,
+      "vocal_rms": 0.1469043954487538
+    },
+    "cluster_id": 2
+  },
+  {
+    "filename": "Rose_On The Ground_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Rose_On The Ground_audio.mp3",
+    "guess_artist": "Rose",
+    "guess_title": "On The Ground",
+    "text_tags": "moderate tempo mid 중간 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.41015584524062304,
+        "tempo_norm": 0.2975260416666667,
+        "harmonic_emphasis": 0.3954107173503986
+      },
+      "voice": {
+        "vocal_brightness": 0.31291045972368514,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.014919546413875759,
+        "vocal_prominence_vs_mix": 0.20325811151806408
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.20225414633750916,
+      "perc_rms": 0.13410146534442902,
+      "vocal_rms": 0.17080470266912698
+    },
+    "cluster_id": 0
+  },
+  {
+    "filename": "Rose_toxic till the end_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\Rose_toxic till the end_audio.mp3",
+    "guess_artist": "Rose",
+    "guess_title": "toxic till the end",
+    "text_tags": "fast tempo upbeat 빠른 활기 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 medium loudness 중간 볼륨 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 0.7208767980337143,
+        "brightness": 0.4017272505885426,
+        "tempo_norm": 0.935546875,
+        "harmonic_emphasis": 0.5040342804652811
+      },
+      "voice": {
+        "vocal_brightness": 0.3161609554276037,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.018244131509120763,
+        "vocal_prominence_vs_mix": 0.4160146948695405
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.05859438329935074,
+      "perc_rms": 0.031159011647105217,
+      "vocal_rms": 0.09414045830883878
+    },
+    "cluster_id": 3
+  },
+  {
+    "filename": "The Kid LAROI_A COLDPLAY_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\The Kid LAROI_A COLDPLAY_audio.mp3",
+    "guess_artist": "The Kid LAROI",
+    "guess_title": "A COLDPLAY",
+    "text_tags": "moderate tempo mid 중간 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 harmonic melodic 선율 위주 medium loudness 중간 볼륨 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.2848600866916252,
+        "tempo_norm": 0.32820012019230765,
+        "harmonic_emphasis": 0.7992530136256507
+      },
+      "voice": {
+        "vocal_brightness": 0.2575342401799367,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.013431484120792462,
+        "vocal_prominence_vs_mix": 0.2665027611952986
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.08035292476415634,
+      "perc_rms": 0.025411710143089294,
+      "vocal_rms": 0.07904944656553316
+    },
+    "cluster_id": 4
+  },
+  {
+    "filename": "WAX_황혼의 문턱_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\WAX_황혼의 문턱_audio.mp3",
+    "guess_artist": "WAX",
+    "guess_title": "황혼의 문턱",
+    "text_tags": "slow tempo calm 느린 잔잔 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.21904569197624485,
+        "tempo_norm": 0.17291259765625,
+        "harmonic_emphasis": 0.7867178278926685
+      },
+      "voice": {
+        "vocal_brightness": 0.176488879896641,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.00500024035309883,
+        "vocal_prominence_vs_mix": 0.2961196501556167
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.09301839768886566,
+      "perc_rms": 0.030033156275749207,
+      "vocal_rms": 0.09834117853997076
+    },
+    "cluster_id": 1
+  },
+  {
+    "filename": "권진아_끝사랑_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\권진아_끝사랑_audio.mp3",
+    "guess_artist": "권진아",
+    "guess_title": "끝사랑",
+    "text_tags": "fast tempo upbeat 빠른 활기 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 harmonic melodic 선율 위주 quiet soft 조용 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 0.21097498387098312,
+        "brightness": 0.21917448373938778,
+        "tempo_norm": 0.633326480263158,
+        "harmonic_emphasis": 0.9021551085530651
+      },
+      "voice": {
+        "vocal_brightness": 0.1689350590071316,
+        "vocal_presence": 0.3842935711145401,
+        "vocal_air_hf": 0.0038974932457000785,
+        "vocal_prominence_vs_mix": 0.3643024800432237
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.01719081401824951,
+      "perc_rms": 0.004598232451826334,
+      "vocal_rms": 0.02164021462142054
+    },
+    "cluster_id": 1
+  },
+  {
+    "filename": "성시경_너의 모든 순간_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\성시경_너의 모든 순간_audio.mp3",
+    "guess_artist": "성시경",
+    "guess_title": "너의 모든 순간",
+    "text_tags": "fast tempo upbeat 빠른 활기 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 medium loudness 중간 볼륨 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 0.7862705290317535,
+        "brightness": 0.33670992444143616,
+        "tempo_norm": 0.633326480263158,
+        "harmonic_emphasis": 0.7977592586914231
+      },
+      "voice": {
+        "vocal_brightness": 0.2122701300586652,
+        "vocal_presence": 0.9662973135709763,
+        "vocal_air_hf": 0.007894783545705641,
+        "vocal_prominence_vs_mix": 0.24579257727320916
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.06957002729177475,
+      "perc_rms": 0.022055907174944878,
+      "vocal_rms": 0.06001824111585124
+    },
+    "cluster_id": 2
+  },
+  {
+    "filename": "성시경_미소천사_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\성시경_미소천사_audio.mp3",
+    "guess_artist": "성시경",
+    "guess_title": "미소천사",
+    "text_tags": "moderate tempo mid 중간 balanced neutral 중성 smooth harmonic 부드러운 mixed harmonic percussive 혼합 loud energetic 강한 에너지 music audio track vocal balanced natural 중성 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.42127994754922404,
+        "tempo_norm": 0.47878196022727276,
+        "harmonic_emphasis": 0.3324286970823345
+      },
+      "voice": {
+        "vocal_brightness": 0.3423867363377626,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.020517319383203905,
+        "vocal_prominence_vs_mix": 0.26509510268637776
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.13015763461589813,
+      "perc_rms": 0.0995074212551117,
+      "vocal_rms": 0.1612488167253622
+    },
+    "cluster_id": 4
+  },
+  {
+    "filename": "성시경_희재_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\성시경_희재_audio.mp3",
+    "guess_artist": "성시경",
+    "guess_title": "희재",
+    "text_tags": "moderate tempo mid 중간 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 medium loudness 중간 볼륨 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 0.7471018731594086,
+        "brightness": 0.3254837856767883,
+        "tempo_norm": 0.525390625,
+        "harmonic_emphasis": 0.7698183931473563
+      },
+      "voice": {
+        "vocal_brightness": 0.22701406480629338,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.008487326917521527,
+        "vocal_prominence_vs_mix": 0.370762652749932
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.06312686949968338,
+      "perc_rms": 0.02096213586628437,
+      "vocal_rms": 0.08157171278180099
+    },
+    "cluster_id": 0
+  },
+  {
+    "filename": "최유리_동그라미_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\최유리_동그라미_audio.mp3",
+    "guess_artist": "최유리",
+    "guess_title": "동그라미",
+    "text_tags": "slow tempo calm 느린 잔잔 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 harmonic melodic 선율 위주 loud energetic 강한 에너지 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 1.0,
+        "brightness": 0.18564049181548406,
+        "tempo_norm": 0.066663240131579,
+        "harmonic_emphasis": 1.0
+      },
+      "voice": {
+        "vocal_brightness": 0.1550814511642368,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.002541215133173911,
+        "vocal_prominence_vs_mix": 0.37677215865196106
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.0999731570482254,
+      "perc_rms": 0.020436260849237442,
+      "vocal_rms": 0.12554471769754588
+    },
+    "cluster_id": 1
+  },
+  {
+    "filename": "최유리_밤,바다_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\최유리_밤,바다_audio.mp3",
+    "guess_artist": "최유리",
+    "guess_title": "밤,바다",
+    "text_tags": "fast tempo upbeat 빠른 활기 dark warm low spectral 어두운 낮은 smooth harmonic 부드러운 harmonic melodic 선율 위주 quiet soft 조용 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 0.26548873633146286,
+        "brightness": 0.22988085132535452,
+        "tempo_norm": 0.57666015625,
+        "harmonic_emphasis": 0.8829191804829432
+      },
+      "voice": {
+        "vocal_brightness": 0.16651760099210267,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.004468463276585363,
+        "vocal_prominence_vs_mix": 0.8471459806222214
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.02312326990067959,
+      "perc_rms": 0.0063797649927437305,
+      "vocal_rms": 0.06711410259721927
+    },
+    "cluster_id": 1
+  },
+  {
+    "filename": "최유리_숲_audio.mp3",
+    "path": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\audio\\최유리_숲_audio.mp3",
+    "guess_artist": "최유리",
+    "guess_title": "숲",
+    "text_tags": "moderate tempo mid 중간 balanced neutral 중성 smooth harmonic 부드러운 harmonic melodic 선율 위주 medium loudness 중간 볼륨 music audio track vocal warm chesty 따뜻한 보컬",
+    "params": {
+      "separation_method": "hpss_harmonic_bandpass",
+      "mood": {
+        "energy": 0.7615908086299896,
+        "brightness": 0.32958806225080406,
+        "tempo_norm": 0.436226222826087,
+        "harmonic_emphasis": 1.0
+      },
+      "voice": {
+        "vocal_brightness": 0.2005577349320237,
+        "vocal_presence": 1.0,
+        "vocal_air_hf": 0.007630148802636069,
+        "vocal_prominence_vs_mix": 0.36383192733240194
+      }
+    },
+    "separation": {
+      "method": "hpss_harmonic_bandpass",
+      "fmin_hz": 180.0,
+      "fmax_hz": 7800.0,
+      "harm_rms": 0.07138583064079285,
+      "perc_rms": 0.013691742904484272,
+      "vocal_rms": 0.08575673298991984
+    },
+    "cluster_id": 2
+  }
+]

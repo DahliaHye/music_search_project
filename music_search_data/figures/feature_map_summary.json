@@ -1,0 +1,12 @@
+{
+  "pca2_explained_ratio": [
+    0.2624589761846199,
+    0.17040913352148607
+  ],
+  "n_tracks": 30,
+  "output_files": {
+    "pca2d": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\music_search_data\\figures\\feature_map_pca2d.png",
+    "heatmap": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\music_search_data\\figures\\feature_map_param_heatmap.png",
+    "radar": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\music_search_data\\figures\\feature_map_cluster_radar.png"
+  }
+}
