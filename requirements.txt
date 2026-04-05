@@ -1,0 +1,5 @@
+# main.py: 영상 → 오디오 추출
+imageio-ffmpeg
+
+# acrcloud_recognize.py: ACRCloud HTTP API
+requests>=2.28

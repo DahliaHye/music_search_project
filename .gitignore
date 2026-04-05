@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+acrcloud_credentials.py
+
+# 용량 큰 미디어(원하면 제거 후 커밋)
+audio/
+video/
