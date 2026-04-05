@@ -32,6 +32,7 @@ def build_index(
     *,
     use_pca: bool = True,
     n_clusters: int | None = None,
+    vocal_n_clusters: int | None = None,
 ) -> dict[str, Any]:
     paths = _audio_files()
     if not paths:
@@ -98,6 +99,15 @@ def build_index(
     for i, m in enumerate(meta):
         m["cluster_id"] = int(labels[i])
 
+    # 보컬 스템 특징(스케일만) 기준 군집 — 목소리/보컬 쪽 유사 그룹
+    nv = vocal_n_clusters if vocal_n_clusters is not None else config.DEFAULT_VOCAL_N_CLUSTERS
+    v_labels, _v_centroids, v_cmeta = fit_clusters(
+        Xvs,
+        n_clusters=min(nv, len(paths)),
+    )
+    for i, m in enumerate(meta):
+        m["vocal_cluster_id"] = int(v_labels[i])
+
     config.DATA_DIR.mkdir(parents=True, exist_ok=True)
     np.savez(
         config.SCALER_PATH,
@@ -131,7 +141,13 @@ def build_index(
         config.CLUSTER_PATH,
         labels=labels,
         track_names=names,
-        meta=cmeta,
+        meta={**cmeta, "kind": "combined_mix_vocal"},
+    )
+    save_cluster_report(
+        config.VOCAL_CLUSTER_PATH,
+        labels=v_labels,
+        track_names=names,
+        meta={**v_cmeta, "kind": "vocal_only"},
     )
 
     return {
@@ -139,6 +155,7 @@ def build_index(
         "dim_embedding": emb_for_index.shape[1],
         "dim_vocal_embedding": vocal_emb.shape[1],
         "clusters": int(cmeta.get("n_clusters", 0)),
+        "vocal_clusters": int(v_cmeta.get("n_clusters", 0)),
         "data_dir": str(config.DATA_DIR),
     }
 

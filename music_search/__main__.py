@@ -6,6 +6,7 @@ python -m music_search similar 0
 python -m music_search similar 0 --vocal
 python -m music_search viz
 python -m music_search clusters
+python -m music_search vocal-clusters
 """
 from __future__ import annotations
 
@@ -35,7 +36,14 @@ def main() -> None:
         "--clusters",
         type=int,
         default=None,
-        help=f"KMeans 클러스터 수 (기본 {config.DEFAULT_N_CLUSTERS})",
+        help=f"KMeans 클러스터 수 — 결합 특징 (기본 {config.DEFAULT_N_CLUSTERS})",
+    )
+    b.add_argument(
+        "--vocal-clusters",
+        type=int,
+        default=None,
+        dest="vocal_clusters",
+        help=f"보컬 특징만 쓰는 KMeans 클러스터 수 (기본 {config.DEFAULT_VOCAL_N_CLUSTERS})",
     )
 
     s = sub.add_parser("search", help="자연어 검색")
@@ -70,7 +78,11 @@ def main() -> None:
         help="출력 폴더 (기본: music_search_data/figures)",
     )
 
-    sub.add_parser("clusters", help="클러스터 요약 JSON 출력")
+    sub.add_parser("clusters", help="결합 특징 클러스터 요약 JSON 출력")
+    sub.add_parser(
+        "vocal-clusters",
+        help="보컬 특징만 쓴 클러스터 요약 JSON 출력",
+    )
 
     args = p.parse_args()
 
@@ -78,6 +90,7 @@ def main() -> None:
         info = build_index(
             use_pca=not args.no_pca,
             n_clusters=args.clusters,
+            vocal_n_clusters=getattr(args, "vocal_clusters", None),
         )
         print(json.dumps(info, ensure_ascii=False, indent=2))
         return
@@ -91,7 +104,11 @@ def main() -> None:
         )
         print("debug:", json.dumps(dbg, ensure_ascii=False))
         for m, sc in rows:
-            print(f"{sc:.4f}  [{m.get('cluster_id')}]  {m.get('filename')}")
+            vc = m.get("vocal_cluster_id")
+            vc_s = f" v={vc}" if vc is not None else ""
+            print(
+                f"{sc:.4f}  [c={m.get('cluster_id')}]{vc_s}  {m.get('filename')}"
+            )
             tt = m.get("text_tags", "") or ""
             tail = "..." if len(tt) > 160 else ""
             print(f"         tags: {tt[:160]}{tail}")
@@ -117,6 +134,14 @@ def main() -> None:
         path = config.CLUSTER_PATH
         if not path.is_file():
             print("클러스터 파일 없음. build 먼저 실행.", file=sys.stderr)
+            sys.exit(1)
+        print(path.read_text(encoding="utf-8"))
+        return
+
+    if args.cmd == "vocal-clusters":
+        path = config.VOCAL_CLUSTER_PATH
+        if not path.is_file():
+            print("보컬 클러스터 파일 없음. build 먼저 실행.", file=sys.stderr)
             sys.exit(1)
         print(path.read_text(encoding="utf-8"))
         return

@@ -1,8 +1,9 @@
 """
 특징 패턴·도출 파라미터 시각화 (FEATURE MAP).
-- 결합 임베딩 PCA 2D + 클러스터 색
+- 결합 임베딩 PCA 2D + 결합 클러스터 색
+- 동일 PCA 좌표 + 보컬 전용 클러스터 색 (tracks_meta 에 vocal_cluster_id 있을 때)
 - 트랙×파라미터 히트맵
-- 클러스터별 레이더(분위기·보컬 축)
+- 클러스터별 레이더(결합 / 보컬 각각)
 """
 from __future__ import annotations
 
@@ -70,6 +71,36 @@ def run_visualize(
     fig.savefig(p1, dpi=160)
     plt.close(fig)
 
+    p1v: Path | None = None
+    v_lab = [
+        m.get("vocal_cluster_id") for m in meta
+    ]
+    if v_lab and all(x is not None for x in v_lab):
+        v_labels = np.array([int(x) for x in v_lab], dtype=int)
+        fig, ax = plt.subplots(figsize=(10, 7))
+        scv = ax.scatter(
+            xy[:, 0],
+            xy[:, 1],
+            c=v_labels,
+            cmap="tab10",
+            alpha=0.85,
+            s=42,
+            edgecolors="k",
+            linewidths=0.2,
+        )
+        ax.set_title(
+            "FEATURE MAP: same PCA-2D, color = vocal-only cluster"
+        )
+        ax.set_xlabel(f"PC1 ({pca2.explained_variance_ratio_[0]*100:.1f}%)")
+        ax.set_ylabel(f"PC2 ({pca2.explained_variance_ratio_[1]*100:.1f}%)")
+        plt.colorbar(scv, ax=ax, label="vocal_cluster_id")
+        for i in range(len(names)):
+            ax.annotate(str(i), (xy[i, 0], xy[i, 1]), fontsize=6, alpha=0.8)
+        p1v = out_dir / "feature_map_pca2d_vocal_clusters.png"
+        fig.tight_layout()
+        fig.savefig(p1v, dpi=160)
+        plt.close(fig)
+
     # --- 2) 파라미터 히트맵 (mood + voice)
     mood_keys = ["energy", "brightness", "tempo_norm", "harmonic_emphasis"]
     voice_keys = [
@@ -78,6 +109,7 @@ def run_visualize(
         "vocal_air_hf",
         "vocal_prominence_vs_mix",
     ]
+    dims = mood_keys + voice_keys
     rows: list[list[float]] = []
     row_labels: list[str] = []
     if params_list:
@@ -109,7 +141,6 @@ def run_visualize(
     p3: Path | None = None
     if params_list:
         n_c = int(labels.max()) + 1 if labels.size else 0
-        dims = mood_keys + voice_keys
         cent = np.zeros((n_c, len(dims)), dtype=np.float64)
         counts = np.zeros(n_c, dtype=np.int32)
         for i, pr in enumerate(params_list):
@@ -146,6 +177,51 @@ def run_visualize(
         fig.savefig(p3, dpi=160)
         plt.close(fig)
 
+    # --- 3b) 보컬 클러스터 레이더 (동일 파라미터, 그룹만 보컬 ID)
+    p3v: Path | None = None
+    if (
+        params_list
+        and v_lab
+        and all(x is not None for x in v_lab)
+    ):
+        v_labels_r = np.array([int(x) for x in v_lab], dtype=int)
+        n_vc = int(v_labels_r.max()) + 1 if v_labels_r.size else 0
+        cent_v = np.zeros((n_vc, len(dims)), dtype=np.float64)
+        counts_v = np.zeros(n_vc, dtype=np.int32)
+        for i, pr in enumerate(params_list):
+            cid = int(v_labels_r[i]) if i < len(v_labels_r) else 0
+            m = pr.get("mood", {})
+            v = pr.get("voice", {})
+            vec = [float(m.get(k, 0)) for k in mood_keys] + [
+                float(v.get(k, 0)) for k in voice_keys
+            ]
+            cent_v[cid] += np.array(vec)
+            counts_v[cid] += 1
+        for c in range(n_vc):
+            if counts_v[c] > 0:
+                cent_v[c] /= counts_v[c]
+
+        angles = np.linspace(0, 2 * np.pi, len(dims), endpoint=False)
+        angles = np.concatenate([angles, [angles[0]]])
+
+        fig = plt.figure(figsize=(9, 9))
+        ax = fig.add_subplot(111, polar=True)
+        for c in range(n_vc):
+            if counts_v[c] == 0:
+                continue
+            vals = np.concatenate([cent_v[c], [cent_v[c, 0]]])
+            ax.plot(angles, vals, label=f"vocal cluster {c} (n={counts_v[c]})")
+            ax.fill(angles, vals, alpha=0.08)
+        ax.set_xticks(angles[:-1])
+        ax.set_xticklabels(dims, fontsize=7)
+        ax.set_ylim(0, 1)
+        ax.set_title("Vocal-cluster radar: mean mood & voice params")
+        ax.legend(loc="upper right", bbox_to_anchor=(1.25, 1.1))
+        p3v = out_dir / "feature_map_vocal_cluster_radar.png"
+        fig.tight_layout()
+        fig.savefig(p3v, dpi=160)
+        plt.close(fig)
+
     # 요약 JSON
     summary = {
         "track_index_to_filename": {str(i): names[i] for i in range(len(names))},
@@ -153,8 +229,10 @@ def run_visualize(
         "n_tracks": int(emb.shape[0]),
         "output_files": {
             "pca2d": str(p1),
+            "pca2d_vocal_clusters": str(p1v) if p1v else None,
             "heatmap": str(p2) if p2 else None,
-            "radar": str(p3) if p3 else None,
+            "radar_combined": str(p3) if p3 else None,
+            "radar_vocal_clusters": str(p3v) if p3v else None,
         },
     }
     summary_path = out_dir / "feature_map_summary.json"
@@ -165,7 +243,9 @@ def run_visualize(
 
     return {
         "pca2d": str(p1),
+        "pca2d_vocal_clusters": str(p1v) if p1v else "",
         "heatmap": str(p2) if p2 else "",
-        "radar": str(p3) if p3 else "",
+        "radar_combined": str(p3) if p3 else "",
+        "radar_vocal_clusters": str(p3v) if p3v else "",
         "summary_json": str(summary_path),
     }

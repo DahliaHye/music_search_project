@@ -1,4 +1,36 @@
 {
+  "track_index_to_filename": {
+    "0": "Billie Eilish_BIRDS OF A FEATHER_audio.mp3",
+    "1": "Billie Eilish_idontwannabeyouanymore_audio.mp3",
+    "2": "Billie Eilish_wish you were gay_audio.mp3",
+    "3": "BTS_SWIM Live_audio.mp3",
+    "4": "City Of Stars (Humming)_audio.mp3",
+    "5": "colorlessFlower_Further_audio.mp3",
+    "6": "G-Dragon_Heartbreaker_audio.mp3",
+    "7": "G-Dragon_Untitled, 무제(無題)_audio.mp3",
+    "8": "G-Dragon_나만 바라봐 2_audio.mp3",
+    "9": "Jay Park(박재범)_ All I Wanna Do_audio.mp3",
+    "10": "Jay Park(박재범)_West Coast_audio.mp3",
+    "11": "keshi_2 soon_audio.mp3",
+    "12": "keshi_always_audio.mp3",
+    "13": "keshi_summer_audio.mp3",
+    "14": "Midnight in Paris OST_15 - Ballad Du Paris_audio.mp3",
+    "15": "N.Flying_Into Bloom_audio.mp3",
+    "16": "Pole6_audio.mp3",
+    "17": "Rose_drinks or coffee_audio.mp3",
+    "18": "Rose_number one girl_audio.mp3",
+    "19": "Rose_On The Ground_audio.mp3",
+    "20": "Rose_toxic till the end_audio.mp3",
+    "21": "The Kid LAROI_A COLDPLAY_audio.mp3",
+    "22": "WAX_황혼의 문턱_audio.mp3",
+    "23": "권진아_끝사랑_audio.mp3",
+    "24": "성시경_너의 모든 순간_audio.mp3",
+    "25": "성시경_미소천사_audio.mp3",
+    "26": "성시경_희재_audio.mp3",
+    "27": "최유리_동그라미_audio.mp3",
+    "28": "최유리_밤,바다_audio.mp3",
+    "29": "최유리_숲_audio.mp3"
+  },
   "pca2_explained_ratio": [
     0.2624589761846199,
     0.17040913352148607
@@ -6,7 +38,9 @@
   "n_tracks": 30,
   "output_files": {
     "pca2d": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\music_search_data\\figures\\feature_map_pca2d.png",
+    "pca2d_vocal_clusters": null,
     "heatmap": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\music_search_data\\figures\\feature_map_param_heatmap.png",
-    "radar": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\music_search_data\\figures\\feature_map_cluster_radar.png"
+    "radar_combined": "C:\\Users\\Dahlia\\Desktop\\music_search_project\\music_search_data\\figures\\feature_map_cluster_radar.png",
+    "radar_vocal_clusters": null
   }
 }
